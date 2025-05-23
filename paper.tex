@@ -9,9 +9,9 @@
 
 \section{Problem Statement}
 
-Cloud computing infrastructure is nearly ubiquitous across all industries, but its use is not without challenges. However, cloud service providers must cater to customers in regulated sectors with a high barrier to entry, which often requires evaluating the provider's cybersecurity posture with mostly centralized bureaucracies. Although preemptively limiting cybersecurity risk, such mandatory evaluation often means significant delay and investment before regulated customers can use new or changing services they urgently need. Are these bureaucracies an optimal solution or a last resort? If the latter, is there a better way?
+Cloud computing infrastructure is nearly ubiquitous across all industries, but its use is not without challenges. Cloud service providers must cater to customers in regulated sectors with high barriers to entry. One barrier is evaluation of the provider's cybersecurity posture, mostly with centralized bureaucracies. Although preemptively limiting cybersecurity risk, such mandatory evaluation often means significant delay and investment before regulated customers can use new or changing services they urgently need. Are these bureaucracies an optimal solution or a last resort? If the latter, is there a better way?
 
-Many regulatory frameworks require frequent, periodic reviews of provider's security posture. Such reviews have significant compounding costs for the cloud service providers, contracted independent auditors, and customers who leverage these cloud services in their products and services to account for centralized assessment methodology. The resulting processes involve frequent manual data exchange and coordination between staff of these different parties, despite the proliferation of automation platforms and security analysis tools. These manual processes form bureaucracies, and the bureaucracies that prefer qualitative over quantitative analysis, which scales poorly. This research will examine a prominent example, FedRAMP's authorization process and its Continuous Monitoring Program \citeyear[p.~18]{fedramp_csp_playbook}, to consider the feasibility and requirements for an alternative to centralized security of monitoring: mutual continuous monitoring without a centralized regulatory body.
+Many regulatory frameworks require frequent, periodic reviews of provider's security posture. Such reviews have significant compounding costs for the cloud service providers, contracted independent auditors, and customers who leverage these cloud services in their products and services to account for centralized assessment methodology. The resulting processes involve frequent manual data exchange and coordination between staff of these different parties, despite the proliferation of automation platforms and security analysis tools. These manual processes form bureaucracies, and the bureaucracies that prefer qualitative over quantitative analysis, which scales poorly. I will perform a critical analysis with FedRAMP's authorization process and its Continuous Monitoring Program \citeyear[p.~18]{fedramp_auth_playbook} as an example. I will use this analysis to identify requirements and test the feasibility of an alternative to the FedRAMP model of continuous monitoring: mutual continuous monitoring without a centralized regulatory body.
 
 \section{Choice of Problem}
 
@@ -23,7 +23,7 @@ Although FedRAMP is a highly visible cloud security authorization program, there
 
 Gartner estimates that global spending on cloud infrastructure in 2024 was \$679 billion dollars. The think tank CSIS estimates that the United States government spent seventeen of its total \$130 billion dollar IT budget on cloud services alone. Although there is not complete compliance with FedRAMP requirements in government agencies as the law requires, the goal of the FedRAMP Authorization Act that mandates FedRAMP's authorization and continuous monitoring program is essentially oversight over this seventeen billion dollars. And even without precise public data, all stakeholders invest significantly in the continuous monitoring process.
 
-FedRAMP processes required dedicated staff for the cloud service provider and customer agencies, not to mention the cost to contract a third party auditor for continuous monitoring. Analysts at stackArmor report estimate that an initial authorization costs a provider \$250,000 to \$750,000 dollars, of which \$100,000 to \$400,000 alone is for continuous monitoring activities. Given a conservative estimate, any improvement or optimization can benefit all stakeholders in reducing \$42,600,000 in spend by 426 services currently authorized, but quite likely more. 
+FedRAMP processes required specialized tools operated by dedicated staff, from the cloud service provider and often the customer agencies. Analysts at stackArmor report estimate that an initial authorization costs a provider \$250,000 to \$750,000 dollars, of which \$100,000 to \$400,000 alone is for continuous monitoring activities. Given a conservative estimate, any improvement or optimization can benefit all stakeholders in reducing \$42,600,000 in spend by 426 services currently authorized, but quite likely more. 
 
 \subsection{Cybersecurity Impacts}
 
@@ -36,7 +36,10 @@ To best research alternatives to popular centralized models for continuous model
     \item a critical of the centralized FedRAMP model for continuous monitoring
     \item an architecture specification for mutual continuous monitoring
     \item prototype code for transparency services for mutual continuous monitoring
-    \item a framework for foundational quantitative measurement of cloud services communicated through organizations using the above architecture
+    \item a framework for foundational quantitative measurement of cloud service security
 \end{enumerate}
+
+\bibliographystyle{apacite}
+\bibliography{references.bib}
 
 \end{document}
